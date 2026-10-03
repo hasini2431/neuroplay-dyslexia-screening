@@ -50,7 +50,7 @@ resetForm.addEventListener("submit", async function (event) {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:8000/reset-password",
+            "https://neuroplay-dyslexia-screening.onrender.com/reset-password",
             {
                 method: "POST",
 
