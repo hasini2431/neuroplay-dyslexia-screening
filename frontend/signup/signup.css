@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family:
+        "Trebuchet MS",
+        "Segoe UI",
+        sans-serif;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fce9f4,
+            #eee9ff,
+            #e7f6ff
+        );
+
+    color: #17175c;
+}
+
+
+.signup-page {
+
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    padding: 50px 8%;
+
+    gap: 70px;
+}
+
+
+/* LEFT SIDE */
+
+.signup-intro {
+
+    padding: 30px;
+}
+
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-size: 28px;
+
+    font-weight: 900;
+
+    color: #17175c;
+}
+
+
+.brand span span {
+
+    color: #e52a98;
+}
+
+
+.signup-intro h1 {
+
+    font-size: 65px;
+
+    line-height: .95;
+
+    margin: 45px 0 25px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #1d78e8,
+            #e52a98
+        );
+
+    -webkit-background-clip: text;
+
+    color: transparent;
+}
+
+
+.signup-intro p {
+
+    max-width: 450px;
+
+    color: #62627d;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+.intro-icons {
+
+    margin-top: 35px;
+
+    font-size: 40px;
+}
+
+
+
+/* SIGNUP CARD */
+
+.signup-card {
+
+    background: rgba(255,255,255,.95);
+
+    padding: 40px;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 25px 60px
+        rgba(50,30,100,.15);
+
+    max-width: 520px;
+
+    width: 100%;
+
+    margin: auto;
+}
+
+
+.signup-card h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 8px;
+}
+
+
+.subtitle {
+
+    color: #77778e;
+
+    margin-bottom: 25px;
+}
+
+
+
+/* FORM */
+
+.form-group {
+
+    margin-bottom: 16px;
+}
+
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: 800;
+
+    font-size: 14px;
+}
+
+
+.form-group input,
+.form-group select {
+
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1.5px solid #ddd9ed;
+
+    border-radius: 12px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    color: #17175c;
+
+    background: #faf9ff;
+}
+
+
+.form-group input:focus,
+.form-group select:focus {
+
+    border-color: #6930e8;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(105,48,232,.1);
+}
+
+
+
+/* BUTTON */
+
+.create-btn {
+
+    width: 100%;
+
+    padding: 15px;
+
+    margin-top: 8px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            100deg,
+            #ec2996,
+            #5d2be8
+        );
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: 900;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+
+.create-btn:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 12px 25px
+        rgba(92,43,232,.25);
+}
+
+
+
+/* MESSAGE */
+
+#message {
+
+    text-align: center;
+
+    margin-top: 15px;
+
+    font-weight: 700;
+}
+
+
+
+/* LOGIN LINK */
+
+.login-text {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #68687e;
+}
+
+
+.login-text a {
+
+    color: #5b2bea;
+
+    font-weight: 800;
+
+    text-decoration: none;
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:850px) {
+
+    .signup-page {
+
+        grid-template-columns: 1fr;
+
+        padding: 30px 5%;
+
+    }
+
+
+    .signup-intro {
+
+        text-align: center;
+
+        padding: 10px;
+    }
+
+
+    .signup-intro h1 {
+
+        font-size: 48px;
+
+        margin: 25px 0 15px;
+    }
+
+
+    .signup-intro p {
+
+        margin: auto;
+    }
+
+
+    .signup-card {
+
+        max-width: 550px;
+    }
+
+}

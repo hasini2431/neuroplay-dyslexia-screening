@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NeuroPlay | Dyslexia Test</title>
+
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="test-header">
+
+        <div class="logo">
+            🧠 NeuroPlay
+        </div>
+
+        <div class="user-info">
+            <span id="usernameDisplay">Welcome!</span>
+            <span id="ageDisplay"></span>
+        </div>
+
+    </header>
+
+
+    <!-- Start Screen -->
+    <main class="test-container">
+
+        <section id="startScreen" class="screen">
+
+            <div class="welcome-icon">
+                🧠
+            </div>
+
+            <h1>Ready to Play? 🎮</h1>
+
+            <p>
+                Welcome to your NeuroPlay test!
+            </p>
+
+            <p class="description">
+                You will play a series of short games and activities.
+                Try your best and answer naturally.
+            </p>
+
+            <div class="test-info">
+
+                <div>
+                    <strong id="questionCount">--</strong>
+                    <span>Questions</span>
+                </div>
+
+                <div>
+                    <strong>🎮</strong>
+                    <span>Game Based</span>
+                </div>
+
+                <div>
+                    <strong>⏱️</strong>
+                    <span>Short Activities</span>
+                </div>
+
+            </div>
+
+            <button id="startButton" class="primary-btn">
+                Start Test →
+            </button>
+
+            <p id="startMessage"></p>
+
+        </section>
+
+
+        <!-- Question Screen -->
+        <section id="questionScreen" class="screen hidden">
+
+            <div class="progress-area">
+
+                <div class="progress-text">
+                    <span id="progressText">
+                        Question 1
+                    </span>
+
+                    <span id="progressCount">
+                        1 / --
+                    </span>
+                </div>
+
+                <div class="progress-bar">
+                    <div
+                        id="progressFill"
+                        class="progress-fill">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="question-card">
+
+                <div class="question-number">
+                    Question <span id="currentQuestionNumber">1</span>
+                </div>
+
+                <h2 id="questionTitle">
+                    Loading question...
+                </h2>
+
+                <p id="questionInstruction">
+                    Please wait...
+                </p>
+
+
+                <!-- Game area -->
+                <div id="gameArea" class="game-area">
+
+                </div>
+
+
+                <!-- Submit -->
+                <button
+                    id="submitAnswerButton"
+                    class="primary-btn"
+                    disabled>
+                    Submit Answer →
+                </button>
+
+                <p id="questionMessage"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Result Screen -->
+        <section id="resultScreen" class="screen hidden">
+
+            <div class="result-icon">
+                🎉
+            </div>
+
+            <h1>Test Completed!</h1>
+
+            <p class="result-subtitle">
+                Thank you for completing the NeuroPlay test.
+            </p>
+
+            <div class="result-card">
+
+                <div class="result-item">
+
+                    <span>Age Group</span>
+
+                    <strong id="resultAgeGroup">
+                        --
+                    </strong>
+
+                </div>
+
+                <div class="result-item">
+
+                    <span>Questions Completed</span>
+
+                    <strong id="resultQuestions">
+                        --
+                    </strong>
+
+                </div>
+                <div class="result-item">
+                   <span>Screening Score</span>
+                   <strong id="screeningProbability">Calculating...</strong>
+                   </div>
+
+                <div class="result-item">
+
+                    <span>Risk Result</span>
+
+                    <strong id="riskResult">
+                        --
+                    </strong>
+
+                </div>
+
+            </div>
+
+            <p class="screening-note">
+                This result is a screening indication, not a medical diagnosis.
+            </p>
+
+            <button
+                class="primary-btn"
+                onclick="window.location.href='../index.html'">
+                Back to Home
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script src="test.js"></script>
+
+</body>
+
+</html>

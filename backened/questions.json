@@ -1,0 +1,792 @@
+{
+  "project": "Indian English Dyslexia Screening Prototype",
+  "status": "prototype",
+  "important_note": "This is a student-project prototype adapted for English. The items are not the original validated clinical questions from the paper and are not a validated Indian dyslexia diagnostic test. Academic Effects items are self-report items and therefore have no correct/incorrect answer. Q32 is fully specified for implementation, but its actual WAV audio file still has to be created.",
+  "interaction_metrics": {
+    "clicks": "Number of answer/interaction attempts made by the child.",
+    "hits": "Number of interactions that match the expected correct response.",
+    "misses": "Number of incorrect interactions.",
+    "score": "For this prototype, score can be calculated from hits; the exact scoring policy can be changed later.",
+    "accuracy": "hits / clicks when clicks > 0, otherwise 0.",
+    "missrate": "misses / clicks when clicks > 0, otherwise 0."
+  },
+  "questions": [
+    {
+      "question_id": 1,
+      "age_groups": [
+        "7-8",
+        "9-11",
+        "12-17"
+      ],
+      "task": "Letter Recognition",
+      "interaction_type": "click",
+      "instruction": "Find and click the target letter.",
+      "content": "Find the letter B.",
+      "options": [
+        "D",
+        "B",
+        "P",
+        "Q"
+      ],
+      "correct_answer": "B",
+      "validation": "selected_option == correct_answer",
+      "domain": "Letters and Sounds"
+    },
+    {
+      "question_id": 2,
+      "age_groups": [
+        "7-8",
+        "9-11",
+        "12-17"
+      ],
+      "task": "Letter-Sound Matching",
+      "interaction_type": "click",
+      "instruction": "Choose the letter that makes the given sound.",
+      "content": "Which letter represents the /m/ sound?",
+      "options": [
+        "N",
+        "M",
+        "W",
+        "V"
+      ],
+      "correct_answer": "M",
+      "validation": "selected_option == correct_answer",
+      "domain": "Letters and Sounds"
+    },
+    {
+      "question_id": 3,
+      "age_groups": [
+        "7-8",
+        "9-11",
+        "12-17"
+      ],
+      "task": "Letter Recognition",
+      "interaction_type": "click",
+      "instruction": "Find the target letter.",
+      "content": "Find the letter p.",
+      "options": [
+        "q",
+        "b",
+        "p",
+        "d"
+      ],
+      "correct_answer": "p",
+      "validation": "selected_option == correct_answer",
+      "domain": "Letters and Sounds"
+    },
+    {
+      "question_id": 4,
+      "age_groups": [
+        "7-8",
+        "9-11",
+        "12-17"
+      ],
+      "task": "Letter-Sound Matching",
+      "interaction_type": "click",
+      "instruction": "Choose the letter that matches the sound.",
+      "content": "Which letter begins the word sun?",
+      "options": [
+        "S",
+        "T",
+        "C",
+        "F"
+      ],
+      "correct_answer": "S",
+      "validation": "selected_option == correct_answer",
+      "domain": "Letters and Sounds"
+    },
+    {
+      "question_id": 5,
+      "age_groups": [
+        "7-8",
+        "9-11",
+        "12-17"
+      ],
+      "task": "Syllable Matching",
+      "interaction_type": "click",
+      "instruction": "Choose the word with the same first syllable.",
+      "content": "Which word starts like 'table'?",
+      "options": [
+        "tiger",
+        "paper",
+        "candle",
+        "river"
+      ],
+      "correct_answer": "tiger",
+      "validation": "selected_option == correct_answer",
+      "domain": "Letters and Sounds"
+    },
+    {
+      "question_id": 6,
+      "age_groups": [
+        "7-8",
+        "9-11",
+        "12-17"
+      ],
+      "task": "Syllable Matching",
+      "interaction_type": "click",
+      "instruction": "Choose the word with the matching ending sound.",
+      "content": "Which word ends like 'cake'?",
+      "options": [
+        "bike",
+        "book",
+        "ball",
+        "bag"
+      ],
+      "correct_answer": "bike",
+      "validation": "selected_option == correct_answer",
+      "domain": "Letters and Sounds"
+    },
+    {
+      "question_id": 7,
+      "age_groups": [
+        "7-8",
+        "9-11",
+        "12-17"
+      ],
+      "task": "Syllable Matching",
+      "interaction_type": "click",
+      "instruction": "Choose the word with the same first syllable.",
+      "content": "Which word starts like 'market'?",
+      "options": [
+        "marker",
+        "rabbit",
+        "window",
+        "pencil"
+      ],
+      "correct_answer": "marker",
+      "validation": "selected_option == correct_answer",
+      "domain": "Letters and Sounds"
+    },
+    {
+      "question_id": 8,
+      "age_groups": [
+        "7-8",
+        "9-11",
+        "12-17"
+      ],
+      "task": "Syllable Matching",
+      "interaction_type": "click",
+      "instruction": "Choose the word that rhymes with the target.",
+      "content": "Which word rhymes with 'light'?",
+      "options": [
+        "sit",
+        "night",
+        "late",
+        "let"
+      ],
+      "correct_answer": "night",
+      "validation": "selected_option == correct_answer",
+      "domain": "Letters and Sounds"
+    },
+    {
+      "question_id": 9,
+      "age_groups": [
+        "7-8",
+        "9-11",
+        "12-17"
+      ],
+      "task": "Syllable Matching",
+      "interaction_type": "click",
+      "instruction": "Choose the word with the same ending sound.",
+      "content": "Which word ends like 'rain'?",
+      "options": [
+        "ring",
+        "train",
+        "run",
+        "road"
+      ],
+      "correct_answer": "train",
+      "validation": "selected_option == correct_answer",
+      "domain": "Reading"
+    },
+    {
+      "question_id": 10,
+      "age_groups": [
+        "7-8",
+        "9-11",
+        "12-17"
+      ],
+      "task": "Word Recognition",
+      "interaction_type": "click",
+      "instruction": "Choose the correctly written word.",
+      "content": "Which is the correct spelling?",
+      "options": [
+        "school",
+        "scool",
+        "shcool",
+        "schoole"
+      ],
+      "correct_answer": "school",
+      "validation": "selected_option == correct_answer",
+      "domain": "Reading"
+    },
+    {
+      "question_id": 11,
+      "age_groups": [
+        "7-8",
+        "9-11",
+        "12-17"
+      ],
+      "task": "Word Recognition",
+      "interaction_type": "click",
+      "instruction": "Choose the real English word.",
+      "content": "Which is a real word?",
+      "options": [
+        "blick",
+        "garden",
+        "frand",
+        "plim"
+      ],
+      "correct_answer": "garden",
+      "validation": "selected_option == correct_answer",
+      "domain": "Reading"
+    },
+    {
+      "question_id": 12,
+      "age_groups": [
+        "7-8",
+        "9-11",
+        "12-17"
+      ],
+      "task": "Word Recognition",
+      "interaction_type": "click",
+      "instruction": "Choose the word that matches the picture/meaning.",
+      "content": "Which word names an animal that barks?",
+      "options": [
+        "cat",
+        "dog",
+        "fish",
+        "bird"
+      ],
+      "correct_answer": "dog",
+      "validation": "selected_option == correct_answer",
+      "domain": "Reading"
+    },
+    {
+      "question_id": 13,
+      "age_groups": [
+        "9-11",
+        "12-17"
+      ],
+      "task": "Word Recognition",
+      "interaction_type": "click",
+      "instruction": "Choose the correctly spelled word.",
+      "content": "Which is correct?",
+      "options": [
+        "because",
+        "becaus",
+        "becouse",
+        "becausе"
+      ],
+      "correct_answer": "because",
+      "validation": "selected_option == correct_answer",
+      "domain": "Reading"
+    },
+    {
+      "question_id": 14,
+      "age_groups": [
+        "7-8",
+        "9-11",
+        "12-17"
+      ],
+      "task": "Visual Search",
+      "interaction_type": "click",
+      "instruction": "Find the target as quickly as possible.",
+      "content": "Find the letter K.",
+      "options": [
+        "K",
+        "X",
+        "H",
+        "R",
+        "M",
+        "T"
+      ],
+      "correct_answer": "K",
+      "validation": "selected_option == correct_answer",
+      "domain": "Reading"
+    },
+    {
+      "question_id": 15,
+      "age_groups": [
+        "7-8",
+        "9-11",
+        "12-17"
+      ],
+      "task": "Visual Search",
+      "interaction_type": "click",
+      "instruction": "Find the target symbol.",
+      "content": "Find the letter G.",
+      "options": [
+        "C",
+        "G",
+        "O",
+        "Q",
+        "D",
+        "B"
+      ],
+      "correct_answer": "G",
+      "validation": "selected_option == correct_answer",
+      "domain": "Reading"
+    },
+    {
+      "question_id": 16,
+      "age_groups": [
+        "7-8",
+        "9-11",
+        "12-17"
+      ],
+      "task": "Visual Search",
+      "interaction_type": "click",
+      "instruction": "Find the target word.",
+      "content": "Find the word 'sun' among the words.",
+      "options": [
+        "son",
+        "sin",
+        "sun",
+        "sum",
+        "run"
+      ],
+      "correct_answer": "sun",
+      "validation": "selected_option == correct_answer",
+      "domain": "Reading"
+    },
+    {
+      "question_id": 17,
+      "age_groups": [
+        "7-8",
+        "9-11",
+        "12-17"
+      ],
+      "task": "Spelling",
+      "interaction_type": "click",
+      "instruction": "Choose the correctly spelled word.",
+      "content": "Which spelling is correct?",
+      "options": [
+        "friend",
+        "freind",
+        "frend",
+        "friand"
+      ],
+      "correct_answer": "friend",
+      "validation": "selected_option == correct_answer",
+      "domain": "Writing and Spelling"
+    },
+    {
+      "question_id": 18,
+      "age_groups": [
+        "9-11",
+        "12-17"
+      ],
+      "task": "Spelling",
+      "interaction_type": "click",
+      "instruction": "Choose the correctly spelled word.",
+      "content": "Which spelling is correct?",
+      "options": [
+        "because",
+        "becaus",
+        "becouse",
+        "beacuse"
+      ],
+      "correct_answer": "because",
+      "validation": "selected_option == correct_answer",
+      "domain": "Writing and Spelling"
+    },
+    {
+      "question_id": 19,
+      "age_groups": [
+        "9-11",
+        "12-17"
+      ],
+      "task": "Missing Letter in Word",
+      "interaction_type": "click",
+      "instruction": "Choose the missing letter.",
+      "content": "Complete the word: _CHOOL",
+      "options": [
+        "S",
+        "C",
+        "T",
+        "F"
+      ],
+      "correct_answer": "S",
+      "validation": "selected_option == correct_answer",
+      "domain": "Writing and Spelling"
+    },
+    {
+      "question_id": 20,
+      "age_groups": [
+        "9-11",
+        "12-17"
+      ],
+      "task": "Extra Letter",
+      "interaction_type": "click",
+      "instruction": "Choose the extra letter.",
+      "content": "Which letter is extra in CAAT?",
+      "options": [
+        "C",
+        "A (first)",
+        "A (second)",
+        "T"
+      ],
+      "correct_answer": "A (second)",
+      "validation": "selected_option == correct_answer",
+      "domain": "Writing and Spelling"
+    },
+    {
+      "question_id": 21,
+      "age_groups": [
+        "12-17"
+      ],
+      "task": "Letter Rearrangement",
+      "interaction_type": "arrange",
+      "instruction": "Arrange the letters to make a word.",
+      "content": "Make the word CAT.",
+      "options": [
+        "brint",
+        "accurate",
+        "plaven",
+        "sarnik"
+      ],
+      "correct_answer": "accurate",
+      "validation": "final_order == correct_order",
+      "domain": "Writing and Spelling",
+      "items": [
+        "T",
+        "A",
+        "C"
+      ],
+      "correct_order": [
+        "C",
+        "A",
+        "T"
+      ]
+    },
+    {
+      "question_id": 22,
+      "age_groups": [
+        "7-8",
+        "9-11",
+        "12-17"
+      ],
+      "task": "Word Separation",
+      "interaction_type": "arrange",
+      "instruction": "Separate the letters into the correct words.",
+      "content": "Separate: ILIKEREADING",
+      "options": [
+        "A",
+        "E",
+        "I",
+        "O"
+      ],
+      "correct_answer": "A",
+      "validation": "final_order == correct_order",
+      "domain": "Writing and Spelling",
+      "items": [
+        "I",
+        "LIKE",
+        "READING"
+      ],
+      "correct_order": [
+        "I",
+        "LIKE",
+        "READING"
+      ]
+    },
+    {
+      "question_id": 23,
+      "age_groups": [
+        "7-8",
+        "9-11",
+        "12-17"
+      ],
+      "task": "Visual Working Memory",
+      "interaction_type": "sequence",
+      "instruction": "Remember the sequence and reproduce it after it disappears.",
+      "content": "Remember: red, blue, green.",
+      "options": [
+        "C",
+        "A",
+        "A",
+        "T"
+      ],
+      "correct_answer": "A",
+      "validation": "submitted_sequence == correct_sequence",
+      "domain": "Memory and Processing",
+      "sequence": [
+        "red",
+        "blue",
+        "green"
+      ]
+    },
+    {
+      "question_id": 24,
+      "age_groups": [
+        "9-11",
+        "12-17"
+      ],
+      "task": "Visual Working Memory",
+      "interaction_type": "sequence",
+      "instruction": "Remember the sequence and reproduce it in the same order.",
+      "content": "Remember: star, circle, square.",
+      "options": [
+        "go",
+        "goes",
+        "going",
+        "gone"
+      ],
+      "correct_answer": "goes",
+      "validation": "submitted_sequence == correct_sequence",
+      "domain": "Memory and Processing",
+      "sequence": [
+        "star",
+        "circle",
+        "square"
+      ]
+    },
+    {
+      "question_id": 25,
+      "age_groups": [
+        "12-17"
+      ],
+      "task": "Processing Speed",
+      "interaction_type": "click",
+      "instruction": "Find and click the target as quickly and accurately as possible.",
+      "content": "Find the letter M.",
+      "options": [
+        "N",
+        "M",
+        "W",
+        "H",
+        "M"
+      ],
+      "correct_answer": "M",
+      "validation": "selected_option == correct_answer",
+      "domain": "Memory and Processing",
+      "timing_required": true
+    },
+    {
+      "question_id": 26,
+      "age_groups": [
+        "9-11",
+        "12-17"
+      ],
+      "task": "Auditory/Sequence Memory",
+      "interaction_type": "sequence",
+      "instruction": "Remember the sequence and select the items in the same order.",
+      "content": "Remember: 4, B, 9.",
+      "options": [
+        "beautifull",
+        "beautiful",
+        "beutiful",
+        "beautifal"
+      ],
+      "correct_answer": "beautiful",
+      "validation": "submitted_sequence == correct_sequence",
+      "domain": "Memory and Processing",
+      "sequence": [
+        "4",
+        "B",
+        "9"
+      ]
+    },
+    {
+      "question_id": 27,
+      "age_groups": [
+        "9-11",
+        "12-17"
+      ],
+      "task": "Processing Speed",
+      "interaction_type": "click",
+      "instruction": "Find the target symbol as quickly and accurately as possible.",
+      "content": "Find the letter P.",
+      "items": [
+        "T",
+        "A",
+        "C"
+      ],
+      "correct_order": [
+        "C",
+        "A",
+        "T"
+      ],
+      "validation": "selected_option == correct_answer",
+      "domain": "Memory and Processing",
+      "options": [
+        "P",
+        "R",
+        "B",
+        "D",
+        "P"
+      ],
+      "correct_answer": "P",
+      "timing_required": true
+    },
+    {
+      "question_id": 28,
+      "age_groups": [
+        "9-11",
+        "12-17"
+      ],
+      "task": "Sequence Processing",
+      "interaction_type": "sequence",
+      "instruction": "Reproduce the sequence in exactly the same order.",
+      "content": "Remember: A, 5, C, 2.",
+      "items": [
+        "flower",
+        "sun"
+      ],
+      "correct_order": [
+        "sun",
+        "flower"
+      ],
+      "validation": "submitted_sequence == correct_sequence",
+      "domain": "Memory and Processing",
+      "sequence": [
+        "A",
+        "5",
+        "C",
+        "2"
+      ]
+    },
+    {
+      "question_id": 29,
+      "age_groups": [
+        "12-17"
+      ],
+      "task": "Academic Reading Difficulty",
+      "interaction_type": "click",
+      "instruction": "Choose the statement that best describes the learner's usual experience.",
+      "content": "When reading a school passage, how often does the learner need extra time?",
+      "items": [
+        "I",
+        "LIKE",
+        "READING"
+      ],
+      "correct_order": [
+        "I",
+        "LIKE",
+        "READING"
+      ],
+      "validation": "record_selected_option",
+      "domain": "Academic Effects",
+      "options": [
+        "Never",
+        "Sometimes",
+        "Often",
+        "Almost always"
+      ],
+      "correct_answer": null,
+      "response_type": "self_report",
+      "scoring_note": "This is a self-report/academic-impact item, not a right-or-wrong question."
+    },
+    {
+      "question_id": 30,
+      "age_groups": [
+        "7-8",
+        "9-11",
+        "12-17"
+      ],
+      "task": "Academic Writing Difficulty",
+      "interaction_type": "click",
+      "instruction": "Choose the statement that best describes the learner's usual experience.",
+      "content": "When completing school writing tasks, how often does the learner need extra time?",
+      "sequence": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "validation": "record_selected_option",
+      "domain": "Academic Effects",
+      "options": [
+        "Never",
+        "Sometimes",
+        "Often",
+        "Almost always"
+      ],
+      "correct_answer": null,
+      "response_type": "self_report",
+      "scoring_note": "This is a self-report/academic-impact item, not a right-or-wrong question."
+    },
+    {
+      "question_id": 31,
+      "age_groups": [
+        "12-17"
+      ],
+      "task": "Academic Study Difficulty",
+      "interaction_type": "click",
+      "instruction": "Choose the statement that best describes the learner's usual experience.",
+      "content": "How often does the learner have difficulty remembering written instructions for schoolwork?",
+      "options": [
+        "Never",
+        "Sometimes",
+        "Often",
+        "Almost always"
+      ],
+      "correct_answer": null,
+      "validation": "record_selected_option",
+      "paper_note": "The paper's revised-test text has an internal inconsistency regarding Q31; this prototype includes Q31 to match the stated 190-feature count for ages 12-17.",
+      "domain": "Academic Effects",
+      "response_type": "self_report",
+      "scoring_note": "This is a self-report/academic-impact item, not a right-or-wrong question."
+    },
+{
+  "question_id": 32,
+  "age_groups": [
+    "12-17"
+  ],
+  "task": "Auditory Word Working Memory",
+  "interaction_type": "listen_and_sequence",
+  "instruction": "Listen carefully. The audio will play a sequence of words. When it finishes, select the words in exactly the same order.",
+  "content":"",
+  "audio_text": [
+    "Candle",
+    "Mountain",
+    "Pencil",
+    "Garden"
+  ],
+
+  "correct_sequence": [
+    "Candle",
+    "Mountain",
+    "Pencil",
+    "Garden"
+  ],
+
+  "validation": "submitted_sequence == correct_sequence",
+
+  "domain": "Memory and Processing",
+
+  "audio_file": "audio/q32_Candle_Mountain_Pencil_Garden.wav",
+
+  "audio_transcript_for_development_only": [
+    "Candle",
+    "Mountain",
+    "Pencil",
+    "Garden"
+  ],
+
+  "display_after_audio": [
+    "Garden",
+    "Pencil",
+    "Candle",
+    "Mountain"
+  ],
+
+  "metrics": {
+    "clicks": "Number of sequence selections.",
+    "hits": "Number of correctly placed selections.",
+    "misses": "Number of incorrectly placed selections.",
+    "score": "Number of correctly placed selections.",
+    "accuracy": "hits / clicks when clicks > 0, otherwise 0.",
+    "missrate": "misses / clicks when clicks > 0, otherwise 0."
+  }
+}
+  ],
+  "domains": [
+    "Letters and Sounds",
+    "Reading",
+    "Writing and Spelling",
+    "Memory and Processing",
+    "Academic Effects"
+  ]
+}

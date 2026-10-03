@@ -1,0 +1,33 @@
+Question,Task,English_Instruction,Skill_Area
+1,Letter recognition,Hear a letter and choose the matching letter.,Alphabetic/phonological awareness
+2,Letter recognition,Hear a letter and choose the matching letter.,Alphabetic/phonological awareness
+3,Letter-sound matching,Hear a letter sound and choose the matching letter.,Phonological awareness
+4,Letter-sound matching,Hear a letter sound and choose the matching letter.,Phonological awareness
+5,Syllable matching,Hear a syllable and choose its written form.,Phonological/syllabic awareness
+6,Syllable matching,Hear a syllable and choose its written form.,Phonological/syllabic awareness
+7,Syllable matching,Hear a syllable and choose its written form.,Phonological/syllabic awareness
+8,Syllable matching,Hear a syllable and choose its written form.,Phonological/syllabic awareness
+9,Syllable matching,Hear a syllable and choose its written form.,Phonological/syllabic awareness
+10,Word recognition,Hear a word and choose the matching written word.,Lexical awareness
+11,Word recognition,Hear a word and choose the matching written word.,Lexical awareness
+12,Word recognition,Hear a word and choose the matching written word.,Lexical awareness
+13,Word recognition,Hear a word and choose the matching written word.,Lexical/auditory working memory
+14,Visual search,Find target letters among similar letters.,Visual discrimination
+15,Visual search,Find target letters among similar letters.,Visual discrimination
+16,Visual search,Find target letters among similar letters.,Visual discrimination
+17,Visual search,Find target letters among similar letters.,Visual discrimination
+18,Word/pseudoword discrimination,Choose the target word among similar alternatives.,Lexical/phonological awareness
+19,Word/pseudoword discrimination,Choose the target word among similar alternatives.,Lexical/phonological awareness
+20,Word/pseudoword discrimination,Choose the target word among similar alternatives.,Lexical/phonological awareness
+21,Word/pseudoword discrimination,Choose the target word among similar alternatives.,Lexical/phonological awareness
+22,Missing letter,Complete a word by selecting the missing letter.,Lexical/orthographic awareness
+23,Extra letter,Identify the extra letter in a word.,Lexical/orthographic awareness
+24,Morphological/semantic error,Find the word causing a meaning/word-form error.,Morphological/semantic awareness
+25,Syntactic error,Find the word causing a grammar error.,Syntactic awareness
+26,Spelling correction,Correct an incorrectly spelled word.,Phonological/orthographic awareness
+27,Letter rearrangement,Rearrange letters to form a real word.,Lexical/orthographic awareness
+28,Syllable rearrangement,Rearrange syllables to form a real word.,Syllabic/lexical awareness
+29,Word separation,Separate joined words into a meaningful sentence.,Lexical/orthographic awareness
+30,Visual working memory,Remember and reproduce a sequence of letters.,Sequential visual working memory
+31,Sentence interaction,Complete a sentence-word interaction with one consistent input method.,Language processing
+32,Auditory working memory,Hear a sequence and reproduce it in order.,Sequential auditory working memory
